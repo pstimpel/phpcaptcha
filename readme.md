@@ -14,8 +14,8 @@ PHP Captcha is using GD to generate images. PHP5 and PHP7 are supported.
 
 1. Download the latest release here: https://github.com/pstimpel/phpcaptcha/releases
 2. Unpack the content of the zip into a folder on your webserver, let's say to `modules` in your webroot
-3. Use your webbrowser and browse to `<Your webserver>/modules/phpcaptcha/index.php`
-4. If 3. works fine, you could configure PHP Captcha by editing `<Your webroot>/modules/phpcaptcha/config.php`
+3. Use your webbrowser and browse to `<Your webserver>/modules/phpcaptcha-<version>/index.php`
+4. If 3. works fine, you could configure PHP Captcha by editing `<Your webroot>/modules/phpcaptcha-<version>/config.php`
 
 ## Configuration options
 
@@ -59,7 +59,7 @@ If it was installed and configured well, just reference `<Your webserver>/module
 
 Example: 
 
-    <img src="https://yourserver/modules/phpcaptcha//index.php" />
+    <img src="https://yourserver/modules/phpcaptcha-<version>/index.php" />
 
 You will have to add a textfield to your form as well, so the user can type in what he/she/it sees on the captcha image. Let's do it like this:
 
