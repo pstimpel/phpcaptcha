@@ -1,4 +1,4 @@
-#PHP Captcha
+# PHP Captcha
 
 Since Google and others are abusing Captchas to be tracking utilities, it was time to write a server based Captcha. Since the data are processed on your webserver only, this Captcha is GDPR safe. PHP Captcha does not forward any data away from your server. You do not need to mention it in your privacy policy. But of course I would like it very much, if you could add a reference to this project.
 
@@ -51,7 +51,7 @@ PHP Captcha is using GD to generate images. PHP5 and PHP7 are supported.
 
 **fontsize**: The font size to be used, default is 25
 
-##How to use it?
+## How to use it?
 
 There is a [Demo](demo/) available, if you unzipped the package at your webserver. Just navigate to the demo subfolder using your webbrowser. If GD is missing, PHP Captcha will detect it and throw an error. If you misconfigured PHP Captcha, it will try to run on defaults, or throw an error depending on the type of your failure.
 
