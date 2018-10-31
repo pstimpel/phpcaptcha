@@ -161,12 +161,10 @@ function renderImage($phpcaptchaConfig, $captchaChallenge) {
     
     header("Content-type: image/png");
     
-    $text = $captchaChallenge;
-    
     $spacedText = '';
-    for($i=0; $i < strlen($text); $i++) {
+    for($i=0; $i < strlen($captchaChallenge); $i++) {
         
-        $spacedText = $spacedText . substr($text, $i, 1).' ';
+        $spacedText = $spacedText . substr($captchaChallenge, $i, 1).' ';
         
     }
     $spacedText = substr($spacedText, 0, strlen($spacedText) - 1);
@@ -201,8 +199,6 @@ function renderImage($phpcaptchaConfig, $captchaChallenge) {
     $ycord = ($phpcaptchaConfig['size']['height'] / 2) + ($textheight / 2);
     
     imagettftext($im, $phpcaptchaConfig['fontsize'], 0, $xcord, $ycord, $fontcolor, $font, $spacedText);
-    
-    $im = imagerotate($im, 0, 0, 1);
     
     imagepng($im);
     
