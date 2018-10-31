@@ -39,7 +39,7 @@ PHP Captcha is using GD to generate images. PHP5 and PHP7 are supported.
 
 **textcolor.b**: Blue value of text color, default is 255, valid from 0 to 255 
 
-**font**: Name of TTF font to use, default is 'Lato-Regular.ttf', you can use any TTF font you like.
+**font**: Name of TTF font to use, default is 'Lato-Regular.ttf', but you can use any TTF font you like.
 
 *Font **Lato** is GPL, OFL and Public Domain by Łukasz Dziedzic, can be found at <a href="https://www.1001freefonts.com/lato.font" target="_blank">https://www.1001freefonts.com/lato.font</a>*
     
