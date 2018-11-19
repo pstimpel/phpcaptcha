@@ -51,6 +51,17 @@ PHP Captcha is using GD to generate images. PHP5 and PHP7 are supported.
 
 **fontsize**: The font size to be used, default is 25
 
+**numberOfLines**: The number of lines to draw across the image for creating some small confusion to OCR, default is 6
+
+**thicknessOfLines**: The thickness per line, default is 2
+
+**linecolor.r**: Red value of line color, default is 128, valid from 0 to 255 
+
+**linecolor.g**: Green value of line color, default is 128, valid from 0 to 255 
+
+**linecolor.b**: Blue value of line color, default is 128, valid from 0 to 255 
+
+
 ## How to use it?
 
 There is a [Demo](demo/) available, if you unzipped the package at your webserver. Just navigate to the demo subfolder using your webbrowser. If GD is missing, PHP Captcha will detect it and throw an error. If you misconfigured PHP Captcha, it will try to run on defaults, or throw an error depending on the type of your failure.

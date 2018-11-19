@@ -20,5 +20,13 @@ $phpcaptchaConfig = array(
     
     'size' => array('width' => 200, 'height' => 50), //dimensions of returned graphics
     
-    'fontsize' => 25 // size of font
+    'fontsize' => 25, // size of font
+    
+    'numberOfLines' => 6, //numbers of lines to draw for adding some confusion to the image
+
+    'thicknessOfLines' => 2, //thickness of lines to draw for adding some confusion to the image, in px
+
+    'linecolor' => array('r' => 128, 'g' => 128, 'b' => 128) //text color of lines across image; values or r, g or b
+                                                            // can be from 0 to 255 each
+
 );
