@@ -5,6 +5,7 @@ Home: https://github.com/pstimpel/phpcaptcha/
 Version history, change log
 
 Version 1.0.2
+- Draw some lines across the captcha image to confuse OCR
 - Bugfix in checkConfig
 - more advanced checks in checkConfig
 - added unit-tests for most of the functions in php folder
